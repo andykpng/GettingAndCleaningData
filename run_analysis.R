@@ -26,7 +26,7 @@ run_analysis <- function() {
   #Bind train and test data
   combined_data <- rbind(combine_train, combine_test)
   #Write out combined data
-  write.table(combined_data, "cleaned_data.txt")
+  write.table(combined_data, "cleaned_data.txt", row.name = FALSE)
   #Use reshape2 package to reshape data
   library(reshape2)
   #Melt data according to subject_id and activity
@@ -34,5 +34,5 @@ run_analysis <- function() {
   #Cast data according to subject_id and activity and aggregate the variables mean
   mean_data <- dcast(dataMelt, subject_id + activity ~ variable, mean)                   
   #Write out subject and activity mean data
-  write.table(mean_data, "subject_activity_mean.txt")
+  write.table(mean_data, "subject_activity_mean.txt", row.name = FALSE)
 }
