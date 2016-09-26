@@ -1,0 +1,30 @@
+Data Dictationary
+Type 
+	Test - Test group
+	Train - Training group
+subject_id
+	the id of subject who participate in the experiments
+activity
+	There are six types of activities in the experiments
+	STANDING
+	SITTING
+	LAYING
+	WALKING
+	WALKING_DOWNSTAIRS
+	WALKING_UPSTAIRS
+Variables column names explanation
+	ends with:
+		mean - the mean of the measurements
+		std - the standard deviation of measurements
+	starts with:
+		t - derive in time
+		f - frequency
+	types of variables
+		contains:
+			Body - signals from body
+			Gravity - signals from gravity
+			Acc - acceleration
+			Gyro - gyroscope
+			Mag - magnitude
+			Jerk - jerk
+		
